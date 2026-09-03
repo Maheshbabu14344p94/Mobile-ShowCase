@@ -1,0 +1,19 @@
+{
+  "name": "emi-store-backend",
+  "version": "1.0.0",
+  "description": "Backend API for 1Fi EMI Store assignment - serves product & EMI plan data from SQLite",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --experimental-sqlite src/server.js",
+    "seed": "node --experimental-sqlite src/seed.js",
+    "dev": "node --experimental-sqlite --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
